@@ -1,0 +1,29 @@
+<!-- Joshua Roanley, 4/12/2025 -->
+<!-- DOCTYPE this is the first tag on the page and it tells the browser that this is an HTML5 page -->
+<!DOCTYPE html>
+<!-- the html tag goes next -->
+<html lang="en">
+    <!-- the head section has info for the browser and search engine -->
+    <head>
+        <title>Sevens, Elevens, or Doubles</title>
+        <!-- add a link of my Javascript file -->
+        <script src="code.js"></script>
+        <!-- add a link of my css file -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!-- the body section holds the text and images that you want to show to the user -->
+        <header>
+            <h1 id="heading">Joshua Roanley's Sevens, Elevens, or Doubles</h1>
+            <button onclick="updateText(); rollDice();">Dice</button>
+            <!-- p is paragraph, game results will be shown and rules explained -->
+            <p id="results"></p>
+            <p>
+                In the dice game "Sevens, Elevens, and Doubles," if a player rolls a 7, 11, or a double, 
+                they choose another player to drink a pre-determined amount of alcohol. The drinker must 
+                consume the alcohol before the roller rolls another 7, 11, or double, or they continue to 
+                drink until successful. Another player can choose to drink the player's drink to avoid the penalty.
+            </p>
+        </header>
+    </body>
+</html>
