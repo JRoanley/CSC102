@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Palindrome Checker</title>
+    <!-- add a link of my Javascript file -->
+    <script src="code.js"></script>
+    <!-- add a link of my css file -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<!-- the body holds all text and boxes for palindrome and user info check -->
+<body>
+    <h1>Joshua Roanley's Palindrome Checker</h1>
+        <input id="palindromeField" type="text" value="defaultValue">
+        <button onclick="checkForPalindrome();">Activate Palindrome Checker</button>
+    <!-- p will be the result of the palindrome check -->
+    <p id="palindromeResults"></p>
+    <br>
+    <br>
+    <h2>User Verification</h2>
+    <input id="firstNameField" type="text" value="Georgie">
+    <input id="lastNameField" type="text" value="Allens">
+    <br>
+    <input id="zipCode" type="text" value="12345">
+    <br>
+    <button onclick="userInfoValidation();">Check User Info</button>
+    <!-- p results of user verification -->
+    <p id="userInfoResults"></p>
+</body>
+</html>
