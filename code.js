@@ -102,5 +102,49 @@ function userInfoValidation() {
     console.log(zipValue);
     console.log("Input validated");
 }
-    
+
+// addition of animation related code
+// start of animation
+let memeImage = document.getElementById("memeImage");
+let incrementor = 1;
+let leftPos = 0;
+let animationMax = null;
+const maxLeft = 500;
+
+// start button of animation
+function startAnimationFrame() {
+
+    incrementor = 1;
+    let startButton = document.getElementById("startAnimation");
+    startButton.disabled = true;
+    let stopButton = document.getElementById("stopAnimation")
+    stopButton.disabled = false;
+    animationLoop();
+    //requestAnimationFrame(animationLoop);
+}
+
+// stop button of animation
+function stopAnimationFrame() {
+
+    let startButton = document.getElementById("startAnimation");
+    startButton.disabled = false;
+    let stopButton = document.getElementById("stopAnimation")
+    stopButton.disabled = true;
+    incrementor = 0;
+    cancelAnimationFrame(animationMax);
+}
+
+// the animation loop
+function animationLoop() {
+
+    if (incrementor !== 0) {
+        leftPos += incrementor;
+        if (leftPos >= maxLeft) {
+            leftPos = 0;
+        }
+        console.log("leftPos");
+        memeImage.style.left = leftPos + "px";
+        animationMax = requestAnimationFrame(animationLoop);
+    }
+}
 
