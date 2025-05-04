@@ -1,4 +1,4 @@
-<!-- Joshua Roanley, 4/27/2025 -->
+<!-- Joshua Roanley, 5/3/2025 -->
 <!-- DOCTYPE this is the first tag on the page and it tells the browser that this is an HTML5 page -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,14 +11,22 @@
 </head>
 <!-- the body holds all text and boxes for palindrome and user info check -->
 <body>
-    <h1>Joshua Roanley's Palindrome Checker</h1>
-        <input id="palindromeField" type="text" value="defaultValue">
-        <button onclick="checkForPalindrome();">Activate Palindrome Checker</button>
+    <header>
+    <h1>Joshua Roanley's Palindrome Checker</h1>  
+    </header>
+    <div class="container1">
+        <nav>
+        <h2>Navigation</h2>
+        <a href="./menu.html">Menu</a>
+        </nav>
+    </div>
+    <input id="palindromeField" type="text" value="defaultValue">
+    <button onclick="checkForPalindrome();">Activate Palindrome Checker</button>
     <!-- p will be the result of the palindrome check -->
     <p id="palindromeResults"></p>
     <br>
     <br>
-    <h2>User Verification</h2>
+    <h3>User Verification</h3>
     <input id="firstNameField" type="text" value="Georgie">
     <input id="lastNameField" type="text" value="Allens">
     <br>
@@ -27,7 +35,7 @@
     <button onclick="userInfoValidation();">Check User Info</button>
     <!-- p results of user verification -->
     <p id="userInfoResults"></p>
-    <div class="container">
+    <div class="container2">
     <audio controls autoplay>
     <source src="136bpmtranceloop.mp3" type="audio/mpeg">
     </audio>

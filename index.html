@@ -1,4 +1,4 @@
-<!-- Joshua Roanley, 4/26/2025 -->
+<!-- Joshua Roanley, 5/3/2025 -->
 <!-- DOCTYPE this is the first tag on the page and it tells the browser that this is an HTML5 page -->
 <!DOCTYPE html>
 <!-- the html tag goes next -->
@@ -11,10 +11,16 @@
     </head>
     <!-- the body section holds the text and images that you want to show to the user -->
     <body>
+        <header>
         <h1>Welcome to my CSC102 Home Page</h1>
-        <br>
-        <br>
-        <div class="container">
+        </header>
+        <div class="container1">
+            <nav>
+            <h2>Navigation</h2>
+            <a href="./menu.html">Menu</a>
+            </nav>
+        </div>
+        <div class="container2">
         <!-- addition of start and stop animation buttons -->
         <button id="startAnimation" onclick="startAnimationFrame();">Start Animation</button>
         <button id="stopAnimation" disabled onclick="stopAnimationFrame();">Stop Animation</button>
@@ -25,6 +31,16 @@
         <img style="position: relative;" id="memeImage" src="confused.gif">
         <!-- add a link of my Javascript file --> 
         <script src="code.js"></script> 
-        </p>  
+        </p>
+        <footer>
+        Joshua Roanley
+        <br>
+        University of Advancing Technology
+        <br>
+        2625 W. Baseline Road
+        <br>
+        Tempe, AZ 85283-1056
+        <br>
+        </footer>
     </body>
 </html>
